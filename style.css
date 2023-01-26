@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: gainsboro;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    
+}
+
+nav ul li{
+    display: inline-block ;
+    position: relative;
+}
+
+nav ul li a{
+    color: cornflowerblue;
+    padding: 10px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.7s;
+    border-radius: 10px;
+}
+nav ul li a:hover{
+    background-color: darkseagreen;
+    color: bisque;
+}
+
+nav ul li ul{ 
+    background-color: bisque;
+    border-top: 2px solid black;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    visibility: none;
+}
+nav ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li ul  li ul  {
+    top: 0;
+    left: 100%;
+   
+}
+
+
+
+
+
+
+
